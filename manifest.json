@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces timer",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/contest/*/problem/*",
+    "https://codeforces.com/problemset/problem/*/*"
+       ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/img16.png",
+    "48": "images/img48.png",
+    "128": "images/img128.png"
+  }
+
+}
